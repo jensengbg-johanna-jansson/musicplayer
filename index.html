@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/dfc5fca1d3.js" crossorigin="anonymous"></script>
+        <title> Music Player 1.0 </title>
+    </head>
+<body>
+    <audio src="audio/energy.mp3" id="0"></audio>
+    <audio src="audio/happyrock.mp3" id="1"></audio>
+    <audio src="audio/hipjazz.mp3" id="2"></audio>
+    
+    <main class="main--container">
+        <div class="player--container">
+            <div class="img--container">
+                <img class="song__img" src="https://picsum.photos/id/1002/100" alt="">
+            </div>
+            <div class="action--container">
+                <span class="songID hidden">0</span>
+                <p class="song__title">Song Title</p>
+                <div class="playerfunctions--container">
+                    <div class="btn--container">
+                        <button class="back action__btn"><i class="fas fa-step-backward"></i></button>
+                        <span class="noTracksMsg back__btn hidden">You have reached the start</span>
+                    </div>
+                    <button class="play action__btn"><i class="fas fa-play"></i></button>
+                    <button class="pause action__btn hidden"><i class="fas fa-pause"></i></button>
+                    <div class="btn--container">
+                        <button class="forward action__btn"><i class="fas fa-step-forward"></i></button>
+                        <span class="noTracksMsg next__btn hidden">You have reached the end</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
